@@ -1,6 +1,6 @@
 # Image processing
 ## Color detection module
-![z](/Pictures/image1.png)
+
 
 The objective of this module is to detect a color combination and send it to the “Minus” robot module whose function is to build a tower made of cubes.
 
@@ -10,26 +10,8 @@ We divided this tutorial into two parts :
 
 ## Getting started
 
-### Flashlight module
-
-#### Aim
-
-We added a LED flashlight above the camera because light is an important factor and can bias our previous calculations. Therefore, the constant level of light thus created enables us to maintain our settings. This flashlight is turned off immediately after the camera has taken the photo, so as not to disrupt other teams or distract the audience. 
-
-#### Bill of materials: 
-
-- One Raspberry Pi zero W
-- One LED flashlight 
-- One 5V battery
-
-#### Connections
-
-We use pin 4 of the raspberry Pi zero to power the gate pin of IRF520 mosfet in order to control the light. The board is powered with a 5V power supply from the battery (pin 2 = 5V and pin 6= GND).
-
-#### Setup 
-- Launch flashlight.py (You can edit switch delay) 
-
 ### Image treatment module
+![z](/Pictures/image1.png)
 
 #### Aim 
 
@@ -89,5 +71,24 @@ You'll see 3 colors frames on the picture and the final combination color on the
 ##### Adjust range color 
 - To change the color range in the code (GP_color_detection.py or WB_color_detection.py)  See the following example : 
 ![z](/Pictures/image5.png)
+
+### Flashlight module
+
+#### Aim
+
+We added a LED flashlight above the camera because light is an important factor and can bias our previous calculations. Therefore, the constant level of light thus created enables us to maintain our settings. This flashlight is turned off immediately after the camera has taken the photo, so as not to disrupt other teams or distract the audience. 
+
+#### Bill of materials: 
+
+- One Raspberry Pi zero W
+- One LED flashlight 
+- One 5V battery
+
+#### Connections
+
+We use pin 4 of the raspberry Pi zero to power the gate pin of IRF520 mosfet in order to control the light. The board is powered with a 5V power supply from the battery (pin 2 = 5V and pin 6= GND).
+
+#### Setup 
+- Launch flashlight.py (You can edit switch delay) 
 
 
