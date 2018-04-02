@@ -13,7 +13,7 @@ First and foremost, we must use a camera to take a picture of the color combinat
 
 Once the photo has been taken, the camera automatically switches off after sending the picture to a Raspberry connected with the same Wi-Fi for future image treatment. 
 
-During this treatment, we use the OpenCV free graphics library. 
+During this treatment, we use the OpenCV free graphics library (***minimum version 3.3.1 or newer***)
 
 We have drawn three frames on the picture (one for each cube to detect) to delimit the test portion. 
   
@@ -29,7 +29,7 @@ As a matter of conclusion, we have implemented in our program the different poss
 - One Raspberry Pi zero W
 - One Wi-Fi GoPro (Hero+) 
 - One 5V battery
-- Etcher (https://etcher.io/) to install an OS on the Raspberry 
+- Etcher (https://etcher.io/) to install an OS on the Raspberry
 
 #### Connections
 
@@ -48,7 +48,6 @@ As a matter of conclusion, we have implemented in our program the different poss
     2) Go to "ImageProcessing" Folder: ***cd /home/pi/..../ImageProcessing***
     3) For testing the GoPro: ***python3 go_pro_test.py*** (You will see normally a picture in the current folder)
     4) For testing the webcam: ***python3 webcam_test.py*** (You will see normally a picture in the current folder)
-
 **color_detection.py**
 
 - *GoPro* : launch the color detection module on the terminal : ***python3 GP_color_detection.py*** 
