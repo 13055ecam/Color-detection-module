@@ -10,7 +10,7 @@ The objective of this module is to detect a color combination and send it to the
 
 - Two Raspberry Pi: a “Pi 3” and a “Pi zero W”
 - A Wi-Fi GoPro (Hero+)
-- A Sencys LED flashlight (of a 4.4cm diameter, 280 lumens, 1.5V and a zoom function for a wide or targeted beam
+- A Sencys LED flashlight (of a 4.4cm diameter, 280 lumens, 1.5V and a zoom function for a wide or targeted beam)
 - A 5V battery 
 
 
