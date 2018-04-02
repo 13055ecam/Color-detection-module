@@ -1,5 +1,4 @@
 # Color detection
-______
 
 The objective of this module is to detect a color combination and send it to the “Minus” robot module whose function is to build a tower made of cubes.
 
