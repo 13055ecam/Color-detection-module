@@ -44,12 +44,13 @@ As a matter of conclusion, we have implemented in our program the different poss
     3) Connect a drive (Fat 32) and flash your SD Card 
 - Active WiFi and connect the GoPro to the Raspberry (if you use a USB Camera, don't forget to install the drive) 
 - Open terminal (***alt+ctrl+t***):
-	1) Import this repos from github : ***git clone "url of this repo"***
-    2) Go to "ImageProcessing" Folder: ***cd /home/pi/..../ImageProcessing***
-    3) For testing the GoPro: ***python3 go_pro_test.py*** (You will see normally a picture in the current folder)
-    4) For testing the webcam: ***python3 webcam_test.py*** (You will see normally a picture in the current folder)
+	1) Install OpenCV by following this tutorial : https://milq.github.io/install-opencv-ubuntu-debian/
+	1) Import the repos from github : ***git clone "url of this repo"***
+    	2) Go to "ImageProcessing" Folder: ***cd /home/pi/..../ImageProcessing***
+    	3) For testing the GoPro: ***python3 go_pro_test.py*** (You will see normally a picture in the current folder)
+    	4) For testing the webcam: ***python3 webcam_test.py*** (You will see normally a picture in the current folder)
+	
 **color_detection.py**
-
 - *GoPro* : launch the color detection module on the terminal : ***python3 GP_color_detection.py*** 
 - *Webcam* : launch the color detection module on the terminal : ***python3 WB_color_detection.py*** 
 
