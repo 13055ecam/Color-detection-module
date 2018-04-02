@@ -5,13 +5,13 @@
 The objective of this module is to detect a color combination and send it to the “Minus” robot module whose function is to build a tower made of cubes.
 
 We divided this tutorial into two parts : 
-- Flashlight module
 - Image treatment module
+- Flashlight module
 
 ## Getting started
 
 ### Image treatment module
-![z](/Pictures/image1.png)
+
 
 #### Aim 
 
@@ -29,6 +29,7 @@ The board analyzes all pixels within each frame:
 
 As a matter of conclusion, we have implemented in our program the different possible combinations to save time. Indeed, we only required two colors to deduce the final combination. 
 
+![z](/Pictures/image1.png)
 #### Bill of materials: 
 
 - One Raspberry Pi zero W
