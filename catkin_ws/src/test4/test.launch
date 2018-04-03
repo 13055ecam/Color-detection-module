@@ -1,0 +1,3 @@
+<launch>
+	<node name="color" pkg="test4" type="image_analyze.py" output="screen"/>
+</launch>
