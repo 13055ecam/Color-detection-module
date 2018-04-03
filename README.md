@@ -9,9 +9,9 @@ The objective of this module is to detect a color combination and send it to the
 
 #### Aim 
 
-First and foremost, we must use a camera to take a picture of the color combination. Here, we have chosen a GoPro as a camera because it has an acceptable quality (780 pixel-HD) and it has also a Wi-Fi module for the remote control. 
+First and foremost, we must connect to GoPro wifi to take a picture of the color combination. Here, we have chosen a GoPro as a camera because it has an acceptable quality (780 pixel-HD) and it has also a Wi-Fi module for the remote control.
 
-Once the photo has been taken, the camera automatically switches off after sending the picture to a Raspberry connected with the same Wi-Fi for future image treatment. 
+Once the photo has been taken, the camera automatically switches off and we connect to the robot by wifi (a Raspberry connected with the same Wi-Fi for future image treatment).
 
 During this treatment, we use the OpenCV free graphics library (***minimum version 3.3.1 or newer***)
 
@@ -21,7 +21,9 @@ The board analyzes all pixels within each frame:
 1.	It looks whether the color detected is in the range color defined for every color (each color range is defined with one high and one low BGR value)
 2.	After that, it returns a value: more the value is great, more the color lies within the range. The program adds up the values and the final value thus obtained determines the color within the range of colors determined initially. 
 
-As a matter of conclusion, we have implemented in our program the different possible combinations to save time. Indeed, we only required two colors to deduce the final combination. 
+However, we have implemented in our program the different possible combinations to save time. Indeed, we only required two colors to deduce the final combination.
+
+As a matter of conclusion, we send combination to the robot by ROS. 
 
 ![z](/Pictures/image1.png)
 #### Bill of materials: 
@@ -39,16 +41,16 @@ As a matter of conclusion, we have implemented in our program the different poss
 - Download Ubuntu mate or an another distribution on the raspberry which is compatible with ROS 
 (https://www.raspberrypi.org/downloads/)
 - To install the distribution : 
-  1) Open Etcher
-    2) Select your image previously
-    3) Connect a drive (Fat 32) and flash your SD Card 
+	1) Open Etcher
+	2) Select your image previously
+	3) Connect a drive (Fat 32) and flash your SD Card 
 - Active WiFi and connect the GoPro to the Raspberry (if you use a USB Camera, don't forget to install the drive) 
 - Open terminal (***alt+ctrl+t***):
 	1) Install OpenCV by following this tutorial : https://milq.github.io/install-opencv-ubuntu-debian/
-	1) Import the repos from github : ***git clone "url of this repo"***
-    	2) Go to "ImageProcessing" Folder: ***cd /home/pi/..../ImageProcessing***
-    	3) For testing the GoPro: ***python3 go_pro_test.py*** (You will see normally a picture in the current folder)
-    	4) For testing the webcam: ***python3 webcam_test.py*** (You will see normally a picture in the current folder)
+	2) Import the repos from github : ***git clone "url of this repo"***
+    	3) Go to "ImageProcessing" Folder: ***cd /home/pi/..../ImageProcessing***
+    	4) For testing the GoPro: ***python3 /test/go_pro_test.py*** (You will see normally a picture in the current folder)
+    	5) For testing the webcam: ***python3 /test/webcam_test.py*** (You will see normally a picture in the current folder)
 	
 **color_detection.py**
 - *GoPro* : launch the color detection module on the terminal : ***python3 GP_color_detection.py*** 
@@ -72,15 +74,10 @@ You'll see 3 colors frames on the picture and the final combination color on the
 You can use ***ROS*** to send the color combination to another robot module
 
 - Install ROS (see "ROS tutorial")
-- Copy ***GP_color_detection_ROS.py*** (or ***WB_color_detection_ROS.py***) to ... 
 - .....
 - .... 
 - .... 
-- Open terminal: 
-	1) Go to "Scripts" folder (***cd .../Scripts***)
-	2) Give the autorisations to execute the script : ***sudo chmd +x GP_script.sh*** (or ***sudo chmd +x WB_script.sh***) 
-- Run the script : ***bash GP_script.sh*** (or ***bash WB_script.sh***)
-
+- Open terminal and run the code : ***python3 GP_color_detection.py*** or ***python3 WB_color_detection.py***
 ### Bonus : flashlight module
 
 #### Aim
