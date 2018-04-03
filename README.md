@@ -46,7 +46,7 @@ As a matter of conclusion, we send combination to the robot by ROS.
 	3) Connect a drive (Fat 32) and flash your SD Card 
 - Active WiFi and connect the GoPro to the Raspberry (if you use a USB Camera, don't forget to install the drive) 
 - Open terminal (***alt+ctrl+t***):
-	1) Install OpenCV by following this tutorial : https://milq.github.io/install-opencv-ubuntu-debian/
+	1) Install ROS by following this tutorial : 
 	2) Import the repos from github : ***git clone "url of this repo"***
     	3) Go to "ImageProcessing" Folder: ***cd /home/pi/..../ImageProcessing***
     	4) For testing the GoPro: ***python3 /test/go_pro_test.py*** (You will see normally a picture in the current folder)
@@ -72,8 +72,6 @@ You'll see 3 colors frames on the picture and the final combination color on the
 ##### ROS
 
 You can use ***ROS*** to send the color combination to another robot module
-
-- Install ROS (see "ROS tutorial")
 - .....
 - .... 
 - .... 
