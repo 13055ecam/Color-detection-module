@@ -53,8 +53,8 @@ As a matter of conclusion, we send combination to the robot by ROS.
     	5) For testing the webcam: ***python3 /test/webcam_test.py*** (You will see normally a picture in the current folder)
 	
 **color_detection.py**
-- *GoPro* : launch the color detection module on the terminal : ***python3 GP_color_detection.py*** 
-- *Webcam* : launch the color detection module on the terminal : ***python3 WB_color_detection.py*** 
+- *GoPro* : launch the color detection module on the terminal : ***python3 /colordetection/GP_color_detection.py*** 
+- *Webcam* : launch the color detection module on the terminal : ***python3 /colordetection/WB_color_detection.py*** 
 
 You'll see 3 colors frames on the picture and the final combination color on the terminal)
 
@@ -77,7 +77,8 @@ You can use ***ROS*** to send the color combination to another robot module
 - .....
 - .... 
 - .... 
-- Open terminal and run the code : ***python3 GP_color_detection.py*** or ***python3 WB_color_detection.py***
+- Open terminal and run the code : ***..... ROS_GP_color_detection.py*** or ***..... ROS_python3 WB_color_detection.py***
+- don't forget to change frames positions and color ranges !!!
 ### Bonus : flashlight module
 
 #### Aim
