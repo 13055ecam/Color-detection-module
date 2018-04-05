@@ -47,16 +47,16 @@ As a matter of conclusion, we send combination to the robot by ROS.
 - Active WiFi and connect the GoPro to the Raspberry (if you use a USB Camera, don't forget to install the drive) 
 - Open terminal (***alt+ctrl+t***):
 	1) Install ROS by following this tutorial : 
-	2) Import the repos from github : ***git clone https://github.com/13055ecam/Color-detection-module***
-    	3) Go to "ImageProcessing" Folder: ***cd /Color-detection-module***
-    	4) For testing the GoPro: ***python3 /test/go_pro_test.py*** (You will see normally a picture in the current folder)
-    	5) For testing the webcam: ***python /test/webcam_test.py*** (You will see normally a picture in the current folder)
+	2) Import the repos from github : ``` git clone https://github.com/13055ecam/Color-detection-module ```
+    	3) Go to "ImageProcessing" Folder: ```cd /Color-detection-module ```
+    	4) For testing the GoPro: ```python3 /test/go_pro_test.py ``` (You will see normally a picture in the current folder)
+    	5) For testing the webcam: ```python /test/webcam_test.py ``` (You will see normally a picture in the current folder)
 	
 **Scripts**
 - Go to color_detection folder cd /Color-detection-module/color_detection 
-- Run this script on the terminal : ***bash GP_combination.sh*** 
+- Run this script on the terminal : ``` bash GP_combination.sh ```
 
-If you use the webcam : ***bash WB_combination.sh***  
+If you use the webcam : ```bash WB_combination.sh ```
 
 You'll see 3 colors frames on the picture and the final combination color on the terminal)
 
@@ -81,7 +81,7 @@ You can use ***ROS*** to send the color combination to another robot module
 - .....
 - .... 
 - .... 
-- Open terminal and run the code : ***..... ROS_GP_color_detection.py*** or ***..... ROS_python3 WB_color_detection.py***
+- Open terminal and run the code : ```..... ROS_GP_color_detection.py``` or ```..... ROS_python3 WB_color_detection.py```
 - don't forget to change frames positions and color ranges !!!
 ### Bonus : flashlight module
 
@@ -101,5 +101,5 @@ We use pin 4 of the raspberry Pi zero to power the gate pin of IRF520 mosfet in 
 ![z](/Pictures/image6.png)
 
 #### Setup 
-- Run the code on the terminal: ***python flashlight.py*** 
+- Run the code on the terminal: ```python flashlight.py```
 
