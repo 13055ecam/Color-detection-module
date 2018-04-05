@@ -1,6 +1,6 @@
 # Color detection
 
-The objective of this module is to detect a color combination and send it to the “Minus” robot module whose function is to build a tower made of cubes.
+>The objective of this module is to detect a color combination and send it to the “Minus” robot module whose function is to build a >tower made of cubes.
 
 ## Getting started
 
@@ -99,7 +99,6 @@ We added a LED flashlight above the camera because light is an important factor 
 #### Connections
 
 We use pin 4 of the raspberry Pi zero to power the gate pin of IRF520 mosfet in order to control the light. The board is powered with a 5V power supply from the battery (pin 2 = 5V and pin 6= GND).
-![z](/Pictures/image6.png)
 
 #### Setup 
 - Run the code on the terminal: ```python flashlight.py```
