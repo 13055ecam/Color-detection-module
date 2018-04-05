@@ -57,24 +57,23 @@ As a matter of conclusion, we send combination to the robot by ROS.
 - Go to color_detection folder cd /ImageProcessing/color_detection 
 - Run this script on the terminal : ***bash GP_combination.sh*** 
 
-If you use the webcam : run  ***bash WB_combination.sh***  
+If you use the webcam : ***bash WB_combination.sh***  
 
 You'll see 3 colors frames on the picture and the final combination color on the terminal)
 
 ##### Adjust position of a frame
 - Put your cursor and maintain it at a place of this image to take of note the position. 
-See the following example : 
-	![before](/Pictures/image3.png)
-	![after](/Pictures/image4.png)
+- Change the position in the code (color_detection.py) 
+
+![before](/Pictures/image2.png)
+![after](/Pictures/image3.png)
 
 Note : xmin is the left side of the square, xmax is the right side of the square, ymin is the top side of the square and ymax is the bottom side of the square
 
-- To change the position in the code (GP_color_detection.py or WB_color_detection.py) . See the following example : 
-![z](/Pictures/image4.png)
-
 ##### Adjust range color 
-- To change the color range in the code (GP_color_detection.py or WB_color_detection.py)  See the following example : 
-![z](/Pictures/image5.png)
+- Put your cursor and maintain it at a place of this image to take of note the position
+- Change the color range in the code (color_detection.py)
+![z](/Pictures/image4.png)
 
 ##### ROS
 
