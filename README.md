@@ -81,8 +81,9 @@ You can use ***ROS*** to send the color combination to another robot module
 - .....
 - .... 
 - .... 
-- Open terminal and run the code : ```..... ROS_GP_color_detection.py``` or ```..... ROS_python3 WB_color_detection.py```
-- don't forget to change frames positions and color ranges !!!
+- Open terminal and run the code : ```..... ROS_color_detection.py```
+
+Note : don't forget to change frames positions and color ranges !
 ### Bonus : flashlight module
 
 #### Aim
