@@ -13,7 +13,7 @@ First and foremost, we must connect to GoPro wifi to take a picture of the color
 
 Once the photo has been taken, the camera automatically switches off and we connect to the robot by wifi (a Raspberry connected with the same Wi-Fi for future image treatment).
 
-During this treatment, we use the OpenCV free graphics library (***minimum version 3.3.1 or newer***)
+During this treatment, we use the OpenCV free graphics library.
 
 We have drawn three frames on the picture (one for each cube to detect) to delimit the test portion. 
   
@@ -38,7 +38,7 @@ As a matter of conclusion, we send combination to the robot by ROS.
 - No pins required  
 
 #### Setup 
-- Download Ubuntu mate or an another distribution on the raspberry which is compatible with ROS (OpenCV is included with ROS)
+- Download last version Ubuntu mate (16.04) or an another distribution for the raspberry which is compatible with ROS.
 (https://www.raspberrypi.org/downloads/)
 - To install the distribution : 
 	1) Open Etcher
@@ -47,14 +47,13 @@ As a matter of conclusion, we send combination to the robot by ROS.
 - Active WiFi and connect the GoPro to the Raspberry (if you use a USB Camera, don't forget to install the drive) 
 - Open terminal (***alt+ctrl+t***):
 	1) Install ROS by following this tutorial : 
-	2) Import the repos from github : ***git clone "url of this repo"***
-    	3) Go to "ImageProcessing" Folder: ***cd /ImageProcessing***
+	2) Import the repos from github : ***git clone https://github.com/13055ecam/Color-detection-module***
+    	3) Go to "ImageProcessing" Folder: ***cd /Color-detection-module***
     	4) For testing the GoPro: ***python3 /test/go_pro_test.py*** (You will see normally a picture in the current folder)
     	5) For testing the webcam: ***python /test/webcam_test.py*** (You will see normally a picture in the current folder)
 	
 **Scripts**
-
-- Go to color_detection folder cd /ImageProcessing/color_detection 
+- Go to color_detection folder cd /Color-detection-module/color_detection 
 - Run this script on the terminal : ***bash GP_combination.sh*** 
 
 If you use the webcam : ***bash WB_combination.sh***  
