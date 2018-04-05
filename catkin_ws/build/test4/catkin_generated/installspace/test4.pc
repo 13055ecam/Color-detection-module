@@ -1,8 +1,0 @@
-prefix=/home/alex/catkin_ws/install
-
-Name: test4
-Description: Description of test4
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/alex/catkin_ws/install/lib 
-Requires: 

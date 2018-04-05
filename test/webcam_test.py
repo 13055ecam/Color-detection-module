@@ -1,5 +1,6 @@
-import RPi.GPIO as GPIO
+#import RPi.GPIO as GPIO
 import time
+import cv2
 #----------
 
 #GPIO.cleanup()
@@ -10,9 +11,8 @@ import time
 # Create an object called camera and connect the firt camera to the computer
 camera = cv2.VideoCapture(0)
 
-for i in range(10):
-    return_value, image = camera.read()
-    cv2.imwrite('opencv'+str(i)+'.png', image)
+return_value, image = camera.read()
+cv2.imwrite('opencv'+'.png', image)
 #GPIO.output(4, GPIO.LOW)
 #time.sleep(1)
 #GPIO.output(4, GPIO.HIGH)
