@@ -56,8 +56,8 @@ As a matter of conclusion, we send combination to the robot by ROS.
 **Scripts**
 - Go to color_detection folder ```cd ... ``` and ```cd color_detection```
 - Open GP_combination.sh ``` nano GP_combination.sh ```  
-- change ***line3*** with the name of your GoPro WiFi (nmcli c up "your GoPro wifi")
-- change ***line6*** with the name of WiFi (nmcli c up "your main wifi") and save it ((***ctrl+x***)
+- Change ***line3*** with the name of your GoPro WiFi (nmcli c up "your GoPro wifi")
+- Change ***line6*** with the name of WiFi (nmcli c up "your main wifi") and save it ((***ctrl+x***)
 - Run this script on the terminal : ``` bash GP_combination.sh ``` 
 
 If you use the webcam : ```bash WB_combination.sh ```
