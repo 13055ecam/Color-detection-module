@@ -67,7 +67,7 @@ You'll see 3 colors frames on the picture and the final combination color on the
 ##### Adjust position of a frame
 ![before](/Pictures/image2.png)
 
-- Maintain your cursor at a place where you want to place a side of the frame
+- Maintain your cursor where you want to place a side of the frame
 - Take note of the position. 
 - Change the position in the code (nano color_detection.py)
 - Restart for another side of the frame and save the file. 
