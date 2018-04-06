@@ -57,7 +57,7 @@ As a matter of conclusion, we send combination to the robot by ROS.
 - Go to color_detection folder ```cd ... ``` and ```cd color_detection```
 - Open GP_combination.sh ``` nano GP_combination.sh ```  
 - Change ***line3*** with the name of your GoPro WiFi (nmcli c up "your GoPro wifi")
-- Change ***line6*** with the name of WiFi (nmcli c up "your main wifi") and save it ((***ctrl+x***)
+- Change ***line6*** with the name of WiFi (nmcli c up "your main wifi") and save it (***ctrl+x***)
 - Run this script on the terminal : ``` bash GP_combination.sh ``` 
 
 If you use the webcam : ```bash WB_combination.sh ```
@@ -65,13 +65,13 @@ If you use the webcam : ```bash WB_combination.sh ```
 You'll see 3 colors frames on the picture and the final combination color on the terminal)
 
 ##### Adjust position of a frame
-
 - Maintain your cursor where you want to place a side of the frame.
 - Take note of the position. 
+- Open a new tab (***ctrl+shift+t***)
 - Change the position in the code (nano color_detection.py)
 ![before](/Pictures/image2.png)
 Note : xmin is the left side of the square, xmax is the right side of the square, ymin is the top side of the square and ymax is the bottom side of the square.
-- Restart for another side of the frame and save the file. 
+- Restart for another side of the frame and save the file (***ctrl+x***)
 
 ![after](/Pictures/image3.png)
 
@@ -80,7 +80,8 @@ Note : xmin is the left side of the square, xmax is the right side of the square
 ##### Adjust range color 
 - Maintain your cursor in the center of the cube 
 - Take note of the RGB color  
-- Change the color range in the code (color_detection.py) and save the file.
+- Open a new tab (***ctrl+shift+t***)
+- Change the color range in the code (color_detection.py) and save the file (***ctrl+x***)
 ![z](/Pictures/image4.png)
 
 ##### ROS
