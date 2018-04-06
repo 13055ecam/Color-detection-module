@@ -70,11 +70,12 @@ You'll see 3 colors frames on the picture and the final combination color on the
 - Take note of the position. 
 - Change the position in the code (nano color_detection.py)
 ![before](/Pictures/image2.png)
+Note : xmin is the left side of the square, xmax is the right side of the square, ymin is the top side of the square and ymax is the bottom side of the square
 - Restart for another side of the frame and save the file. 
 
 ![after](/Pictures/image3.png)
 
-Note : xmin is the left side of the square, xmax is the right side of the square, ymin is the top side of the square and ymax is the bottom side of the square
+
 
 ##### Adjust range color 
 - Maintain your cursor in the center of the cube 
