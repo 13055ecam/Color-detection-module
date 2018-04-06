@@ -1,5 +1,3 @@
-from goprocam import GoProCamera
-from goprocam import constants
 #import RPi.GPIO as GPIO
 import time
 import os
