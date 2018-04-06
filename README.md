@@ -65,11 +65,11 @@ If you use the webcam : ```bash WB_combination.sh ```
 You'll see 3 colors frames on the picture and the final combination color on the terminal)
 
 ##### Adjust position of a frame
-![before](/Pictures/image2.png)
 
 - Maintain your cursor where you want to place a side of the frame
 - Take note of the position. 
 - Change the position in the code (nano color_detection.py)
+![before](/Pictures/image2.png)
 - Restart for another side of the frame and save the file. 
 
 ![after](/Pictures/image3.png)
