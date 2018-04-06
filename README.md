@@ -48,9 +48,10 @@ As a matter of conclusion, we send combination to the robot by ROS.
 - Open terminal (***alt+ctrl+t***):
 	1) Install ROS by following this tutorial :
 	2) Import the repos from github : ``` git clone https://github.com/13055ecam/Color-detection-module ```
-	3) Go to "Color-detection-module" folder: ```cd /Color-detection-module ```
-	4) For testing the GoPro: ```python3 /test/go_pro_test.py ``` (You will see normally a picture in the current folder)
-	5) For testing the webcam: ```python /test/webcam_test.py ``` (You will see normally a picture in the current folder)
+	3) Go to "Color-detection-module" folder: ```cd Color-detection-module ```
+	4) For testing the camera, go to "test" folder : ```cd test ```
+		- For GoPro: ```python3 go_pro_test.py ``` (You will see normally a picture in the current folder)
+		- For the webcam: ```python webcam_test.py ``` (You will see normally a picture in the current folder)
 	
 **Scripts**
 - Go to color_detection folder cd /Color-detection-module/color_detection 
