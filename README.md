@@ -87,10 +87,8 @@ Note : xmin is the left side of the square, xmax is the right side of the square
 ##### ROS
 
 You use ***ROS*** to send the color combination to another robot module
-- .....
-- .... 
-- .... 
-- Open terminal and run the code : ```..... ROS_color_detection.py```
+- Open terminal and ```` roslaunch test4 test.launch ```` to launch ROS 
+- Open a new tab (***ctrl+shift+t***) and  run ```` rostopic echo /color_seq ```` to display messages published to a topic.
 
 Note : don't forget to change frames positions and color ranges !
 ### Bonus : flashlight module
