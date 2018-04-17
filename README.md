@@ -73,8 +73,6 @@ As a matter of conclusion, we send combination to the robot by ROS.
 - Go to color_detection folder :
 ```
 cd ... 
-``` 
-```
 cd color_detection
 ```
 - Open GP_combination.sh :
